@@ -1,0 +1,172 @@
+comment_char %
+escape_char /
+
+% This file is part of the GNU C Library and contains locale data.
+% The Free Software Foundation does not claim any copyright interest
+% in the locale data contained in this file.  The foregoing does not
+% affect the license of the GNU C Library as a whole.  It does not
+% exempt you from the conditions of the license if your use would
+% otherwise be governed by that license.
+
+% English locale for Europe (Azarelian locale)
+% Source: RAP
+% Address: -
+% Contact: Azarilh Namu
+% Email: ennai@tuta.io
+% Tel: -
+% Fax: -
+% Language: en
+% Territory: EU
+% Revision: 1.0
+% Date: 2019-02-23
+% Users: general
+
+LC_IDENTIFICATION
+title      "English locale for Europe (Azarelian locale)"
+source     "RAP"
+address    ""
+contact    "Azarilh Namu"
+email      "ennai@tuta.io"
+tel        ""
+fax        ""
+language   "British English"
+territory  "Europe"
+revision   "1.0"
+date       "2019-02-23"
+audience	""
+application	""
+abbreviation	""
+
+category "i18n:2012";LC_IDENTIFICATION
+category "i18n:2012";LC_CTYPE
+category "i18n:2012";LC_COLLATE
+category "i18n:2012";LC_TIME
+category "i18n:2012";LC_NUMERIC
+category "i18n:2012";LC_MONETARY
+category "i18n:2012";LC_MESSAGES
+category "i18n:2012";LC_PAPER
+category "i18n:2012";LC_NAME
+category "i18n:2012";LC_ADDRESS
+category "i18n:2012";LC_TELEPHONE
+category "i18n:2012";LC_MEASUREMENT
+END LC_IDENTIFICATION
+
+LC_CTYPE
+copy "i18n"
+
+translit_start
+include "translit_combining";""
+translit_end
+END LC_CTYPE
+
+LC_COLLATE
+% Copy the template from ISO/IEC 14651
+copy "iso14651_t1"
+END LC_COLLATE
+
+LC_MONETARY
+int_curr_symbol         "EUR "
+currency_symbol         "<U20AC>"
+mon_decimal_point       "."
+mon_thousands_sep       "'"
+mon_grouping            3;3
+positive_sign           ""
+negative_sign           "-"
+int_frac_digits         2
+frac_digits             2
+p_cs_precedes           1
+p_sep_by_space          1
+n_cs_precedes           1
+n_sep_by_space          1
+p_sign_posn             1
+n_sign_posn             1
+END LC_MONETARY
+
+LC_NUMERIC
+decimal_point           "."
+thousands_sep           "'"
+grouping                3;3
+END LC_NUMERIC
+
+LC_TIME
+abday       "Sun";"Mon";"Tue";"Wed";"Thu";"Fri";"Sat"
+day         "Sunday";/
+            "Monday";/
+            "Tuesday";/
+            "Wednesday";/
+            "Thursday";/
+            "Friday";/
+            "Saturday"
+abmon       "Jan";"Feb";/
+            "Mar";"Apr";/
+            "May";"Jun";/
+            "Jul";"Aug";/
+            "Sep";"Oct";/
+            "Nov";"Dec"
+mon         "January";/
+            "February";/
+            "March";/
+            "April";/
+            "May";/
+            "June";/
+            "July";/
+            "August";/
+            "September";/
+            "October";/
+            "November";/
+            "December"
+d_t_fmt     "%a %d %b %Y %T %z"
+d_fmt       "%y-%m-%d"
+t_fmt       "%T"
+am_pm       "A";"P"
+t_fmt_ampm  "%l:%M:%S %P %z"
+date_fmt    "%A %d %B %Y | %T %z"
+week    7;19961130;4
+first_weekday 1
+END LC_TIME
+
+LC_MESSAGES
+yesexpr "^[+1yY]"
+noexpr  "^[-0nN]"
+yesstr  "yea"
+nostr   "nai"
+END LC_MESSAGES
+
+LC_PAPER
+copy "i18n"
+END LC_PAPER
+
+LC_TELEPHONE
+tel_int_fmt    "+%c %a %l"
+tel_dom_fmt    "%A %l"
+int_select     "00"
+int_prefix     "44"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+copy "i18n"
+END LC_MEASUREMENT
+
+LC_NAME
+name_fmt    "%d%t%g%t%m%t%f"
+name_miss   "Miss."
+name_mr     "Mr."
+name_mrs    "Mrs."
+name_ms     "Ms."
+name_gen	""
+END LC_NAME
+
+LC_ADDRESS
+postal_fmt    "%f%N%a%N%d%N%b%N%s %h %e %r%N%z %T%N%c%N"
+country_name "Europe"
+country_post	"EUR"
+country_ab2   "GB"
+country_ab3   "GBR"
+country_num   826
+country_car    ""
+country_isbn	""
+lang_name     "English"
+lang_ab      "en"
+lang_term    "eng"
+lang_lib    "eng"
+END LC_ADDRESS
